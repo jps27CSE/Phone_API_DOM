@@ -34,7 +34,7 @@ const displayPhones = (data, isShowAll) => {
     <h2 class="card-title text-black">${phone.phone_name}</h2>
     <p class="text-black">If a dog chews shoes whose shoes does he choose?</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary" onclick="show_phone_details_button('${phone.slug}')">Buy Now</button>
+      <button class="btn btn-primary" onclick="show_phone_details_button('${phone.slug}')">Show Details</button>
     </div>
   </div>
     `;
