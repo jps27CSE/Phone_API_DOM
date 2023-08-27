@@ -25,6 +25,9 @@
       </section>
 
       <section>
+        <div id="loading_spinner" class="text-center my-40 hidden">
+          <span class="loading loading-dots loading-lg"></span>
+        </div>
         <div
           id="phone_container"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
@@ -36,6 +39,19 @@
           </button>
         </div>
       </section>
+
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="show_phone_details" class="modal">
+        <form method="dialog" class="modal-box">
+          <h3 class="font-bold text-lg" id="show_detail_phone_name"></h3>
+          <div id="show_detail_container"></div>
+          <div class="modal-action">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </div>
+        </form>
+      </dialog>
     </main>
     <script src="script.js"></script>
   </body>
