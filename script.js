@@ -9,8 +9,6 @@ const phoneDataLoad = async (input_data, isShowAll) => {
 const displayPhones = (data, isShowAll) => {
   const phoneContainer = document.getElementById("phone_container");
 
-  console.log(data);
-
   phoneContainer.textContent = "";
   const showAllContainer = document.getElementById("show-all-container");
   if (data.length > 12 && !isShowAll) {
@@ -18,7 +16,6 @@ const displayPhones = (data, isShowAll) => {
   } else {
     showAllContainer.classList.add("hidden");
   }
-  console.log(isShowAll);
 
   if (!isShowAll) {
     data = data.slice(0, 12);
